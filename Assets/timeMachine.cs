@@ -17,8 +17,8 @@ public class timeMachine : MonoBehaviour
     public Renderer[] leds;
     public Renderer[] tubes;
     public TextMesh screenText;
-    public Color[] ledColors;
-    public Color[] tubeColors;
+    public Material[] ledColors;
+    public Material[] tubeColors;
 
     private int displayedNumber;
     private int selectedOffset;
@@ -115,13 +115,13 @@ public class timeMachine : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             if (binary1[i] == '1' && binary2[i] == '1')
-                tubes[3 - i].material.color = tubeColors[2];
+                tubes[3 - i].material = tubeColors[2];
             else if (binary1[i] == '1')
-                tubes[3 - i].material.color = tubeColors[0];
+                tubes[3 - i].material = tubeColors[0];
             else if (binary2[i] == '1')
-                tubes[3 - i].material.color = tubeColors[1];
+                tubes[3 - i].material = tubeColors[1];
             else
-                tubes[3 - i].material.color = tubeColors[3];
+                tubes[3 - i].material = tubeColors[3];
         }
         offsetDisplayOrder = offsets.ToList().Shuffle().ToArray();
         cycleAnimation = StartCoroutine(CycleLeds());
@@ -160,10 +160,10 @@ public class timeMachine : MonoBehaviour
     {
         while (true)
         {
-            leds[selectedOffset].material.color = offsetDisplayOrder[selectedOffset] < 0 ? ledColors[1] : ledColors[2];
+            leds[selectedOffset].material = offsetDisplayOrder[selectedOffset] < 0 ? ledColors[1] : ledColors[2];
             screenText.text = Math.Abs(offsetDisplayOrder[selectedOffset]).ToString();
             yield return new WaitForSeconds(.75f);
-            leds[selectedOffset].material.color = ledColors[0];
+            leds[selectedOffset].material = ledColors[0];
             selectedOffset = (selectedOffset + 1) % 10;
         }
     }
@@ -181,12 +181,12 @@ public class timeMachine : MonoBehaviour
 
     private IEnumerator SolveAnimation()
     {
-        leds[selectedOffset].material.color = ledColors[0];
+        leds[selectedOffset].material = ledColors[0];
         foreach (Renderer tube in tubes)
-            tube.material.color = tubeColors[3];
+            tube.material = tubeColors[3];
         for (int i = 0; i < 10; i++)
         {
-            leds[i].material.color = ledColors[3];
+            leds[i].material = ledColors[3];
             yield return new WaitForSeconds(.25f);
         }
     }

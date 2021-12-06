@@ -2959,15 +2959,15 @@ MonoBehaviour:
   - {fileID: 23074495729687150}
   screenText: {fileID: 102002413050655210}
   ledColors:
-  - {r: 0.07450981, g: 0.06666667, b: 0.06666667, a: 1}
-  - {r: 0.83823526, g: 0.27735728, b: 0.4746316, a: 1}
-  - {r: 0.2762946, g: 0.5735294, b: 0.2656791, a: 1}
-  - {r: 0.1490052, g: 0.59681123, b: 0.7794118, a: 1}
+  - {fileID: 2100000, guid: 65fa26715aac3e742818995bf82037d5, type: 2}
+  - {fileID: 2100000, guid: 63506de0f2803a44a809fe02225dd138, type: 2}
+  - {fileID: 2100000, guid: a90be0d5a2b56a0429c76539bcfe0ad6, type: 2}
+  - {fileID: 2100000, guid: 38322d06f9d2ba6478334c09fd1e05d5, type: 2}
   tubeColors:
-  - {r: 0.9411765, g: 0.90657437, b: 0.90657437, a: 1}
-  - {r: 0.86764705, g: 0.10845588, b: 0.10845588, a: 1}
-  - {r: 0.9558824, g: 0.6395978, b: 0.8817191, a: 1}
-  - {r: 0.14705884, g: 0.14597753, b: 0.1468053, a: 1}
+  - {fileID: 2100000, guid: f95954c4645c6b04e826157bdab031e3, type: 2}
+  - {fileID: 2100000, guid: b4ea36be3fe294a4ebc76a5b22d30a32, type: 2}
+  - {fileID: 2100000, guid: f6746cb7013056a45864e3b08cd5e36c, type: 2}
+  - {fileID: 2100000, guid: 21624b73e54c80f488b1dca17ea21e50, type: 2}
 --- !u!114 &114061699628811772
 MonoBehaviour:
   m_ObjectHideFlags: 1

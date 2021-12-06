@@ -14,10 +14,9 @@ MonoBehaviour:
   id: timeMachine
   title: Time Machine
   author: TasThing
-  description: '1.21 Gigawatts!?!
-
-
-    Module idea by EpicToast, implementation by TasThing.'
-  version: 1.0
+  description: "1.21 Gigawatts!?!\r\n\r\nModule idea by EpicToast, implementation
+    by TasThing.\r\n\r\n[url=https://ktane.timwi.de/HTML/Time%20Machine.html]Manual
+    HTML[/url]\r\n[url=https://ktane.timwi.de/PDF/Time%20Machine.pdf]Manual PDF[/url]"
+  version: 1.0.1
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 0d2a15dae30c36e4f87e42a4ac786301, type: 3}
